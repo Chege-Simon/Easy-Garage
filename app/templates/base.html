@@ -38,8 +38,19 @@
                 <a class="nav-link n-link" href="#">Assistant</a>
             </li>  
         </ul>
-      </nav>
-      <br>
-      <br>
+    </nav>
+    <br>
+    <br>
+    {% block content %}
+      
+    {% endblock %}
 </body>
+<footer class="jumbotron footer text-faded text-center py-5"" style="margin-bottom:0; background-color:rgb(71, 179, 118) ;">
+    <a class="btn btn-secondary ml-auto" style="float: right;" href="#">^</a>
+    <div class="container">
+        <img src="{{ url_for('static', filename='pics/logo3.png') }}" alt="logo" style="width: 350; height: 120 ;">
+    </div>
+    <p class="m-0 small">Email: info@easygarage.com support@easygarage.com</p>
+    <p class="m-0 small">Copyright &copy; Your Website 2019</p>
+</footer>
 </html>

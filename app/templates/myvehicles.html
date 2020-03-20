@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}
+    {% if title %}
+        <title>Easy Garage - {{ title }}</title>
+    {% else %}
+        <title>Easy Garage</title>
+    {% endif %}
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 " >
+            <ul class="nav flex-column border border-left-0 border-bottom-0 border-success">
+                <h3 style="background-color:rgb(71, 179, 118);">Side Bar</h3>
+                <li class="nav-item ">
+                    <a class="nav-link sidebar" href="#">link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar" href="#">link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar" href="#">link 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar" href="#">link 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar" href="#">link 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar" href="#">link 6</a>
+                </li>
+            </ul>
+        </div>
+        <vl></vl>
+        <div class="col-md-9 jumbotron">Oops... you dont have any vehicles</div>
+    </div>
+</div>
+{% endblock %}

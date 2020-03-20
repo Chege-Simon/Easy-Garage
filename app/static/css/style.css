@@ -18,3 +18,16 @@ li {
     text-decoration-color: red;
     color: rgb(71, 179, 118);
 }
+.sidebar :active {
+    text-decoration: underline;
+    text-decoration-color: rgb(71, 179, 118);
+    color: rgb(71, 179, 118);
+}
+.sidebar {
+    text-decoration-style: none;
+    text-decoration: underline;
+    color: black;
+} 
+.sidebar:hover {
+    color: rgb(71, 179, 118);
+}
