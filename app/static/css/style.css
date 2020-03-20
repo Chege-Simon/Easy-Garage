@@ -1,0 +1,11 @@
+.top-bar {
+    font-size: small;
+}
+.top-bar-link {
+    text-decoration-style: none;
+    color: rgb(71, 179, 118);
+}
+.top-bar-link:hover {
+    color: red;
+}
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+    <div class="d-flex" style="background-color:rgb(219, 219, 219);">
+        <div class="p-2 mr-auto top-bar">Easy Garage Help Desk: 0700 000 000(Safaricom), 0200 000 000(Telkom)</div>
+        <a href="#" class="p-2 top-bar top-bar-link">Account</a><span>|</span>
+        <a href="#" class="p-2 top-bar top-bar-link">Sign In</a><span>|</span>
+        <a href="#" class="p-2 top-bar top-bar-link">Register An Account</a>
+    </div>
+</body>
+</html>
