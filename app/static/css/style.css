@@ -8,4 +8,13 @@
 .top-bar-link:hover {
     color: red;
 }
-
+li {
+    color: white;
+    padding: 0px 20px;
+}
+.nav-item a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: rgb(71, 179, 118);
+}
