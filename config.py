@@ -1,6 +1,7 @@
 #flask config classes
 import os
 #  Set Flask configuration vars
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     # General Config
@@ -9,7 +10,9 @@ class Config:
 class DevConfig:
     TESTING = True
     DEBUG = os.environ.get('DEBUG')
-    DATABASE_URI = os.environ.get('DEV_DATABASE_URI')
+    QLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+        'sqlite:///' + os.path.join(basedir, 'devdatabase.db')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class ProdConfig:
     TESTING = False

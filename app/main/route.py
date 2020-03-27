@@ -1,5 +1,5 @@
 
-from flask import render_template,url_for, Blueprint
+from flask import render_template,url_for
 from app.main import bp
 
 
@@ -11,7 +11,3 @@ def index():
 @bp.route('/myvehicles')
 def myVehicles():
     return render_template("myvehicles.html", title='My Vehicles')
-
-@bp.route('/user/<id>')
-def usercenter(id):
-    return render_template("usercenter.html", title='User Account')
