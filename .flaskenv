@@ -1,2 +1,3 @@
 FLASK_APP = garage.py
 FLASK_DEBUG = 1
+TESTING = True
