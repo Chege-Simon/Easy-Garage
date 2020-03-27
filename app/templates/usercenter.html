@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}
+    {% if title %}
+        <title>Easy Garage - {{ title }}</title>
+    {% else %}
+        <title>Easy Garage</title>
+    {% endif %}
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 " >
+            <ul class="nav flex-column border border-left-0 border-bottom-0 border-success">
+                <h3 style="background-color:rgb(71, 179, 118);">User Center</h3>
+                <h5>User Center</h5>
+                <li class="nav-item ">
+                    <a class="nav-link sidebar" href="#">User Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar" href="#">Modify Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar" href="#">Email&Mobile settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9 container">
+            <h4>My Information</h4>
+            <table class="table table-striped table-bordered table-hover">
+                <!-- <thead>
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                  </tr>
+                </thead> -->
+                <tbody>
+                  <tr>
+                    <td>Username:</td>
+                    <td>36898910</td>
+                  </tr>
+                  <tr>
+                    <td>Fullname:</td>
+                    <td>SIMON PETER KIMANI</td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td>propete211@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>ID:</td>
+                    <td>36898910</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,3 +1,7 @@
+body,footer {
+    /* font-family: sans-serif, Arial, Helvetica; */
+    font-family: sans-serif;
+}
 .top-bar {
     font-size: small;
 }
@@ -8,11 +12,11 @@
 .top-bar-link:hover {
     color: red;
 }
-li {
+.navbar-nav li {
     color: white;
     padding: 0px 20px;
 }
-.nav-item a:hover{
+.navbar-nav .nav-item a:hover{
     text-decoration: none;
     text-decoration: underline;
     text-decoration-color: red;
@@ -25,9 +29,12 @@ li {
 }
 .sidebar {
     text-decoration-style: none;
-    text-decoration: underline;
     color: black;
 } 
 .sidebar:hover {
     color: rgb(71, 179, 118);
+    text-decoration: underline;
+}
+.col-md-2 {
+    font-size: 15px;
 }
