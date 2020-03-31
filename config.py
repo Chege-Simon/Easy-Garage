@@ -7,14 +7,14 @@ class Config:
     # General Config
     SECRET_KEY = b'_5#y2L"F4Q8z\n\xec]/'
 
-class DevConfig:
+class DevConfig(Config):
     TESTING = True
     DEBUG = os.environ.get('DEBUG')
     QLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'devdatabase.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-class ProdConfig:
+class ProdConfig(Config):
     TESTING = False
     DEBUG = os.environ.get('DEBUG')
     DATABASE_URI = os.environ.get('PROD_DATABASE_URI')

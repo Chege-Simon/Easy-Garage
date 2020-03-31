@@ -16,7 +16,7 @@
     <div class="d-flex" style="background-color:rgb(219, 219, 219);">
         <div class="p-2 mr-auto top-bar">Easy Garage Help Desk: 0700 000 000(Safaricom), 0200 000 000(Telkom)</div>
         <a href="{{ url_for('customer.usercenter', id=200) }}" class="p-2 top-bar top-bar-link">User Center</a><span>|</span>
-        <a href="#" class="p-2 top-bar top-bar-link">Sign In</a><span>|</span>
+        <a href="{{ url_for('auth.login') }}" class="p-2 top-bar top-bar-link">Log In</a><span>|</span>
         <a href="#" class="p-2 top-bar top-bar-link">Register An Account</a>
     </div>
     <div class="container">
@@ -24,6 +24,7 @@
     </div>
     <nav class="navbar justify-content-center navbar-expand-sm navbar-dark"
      style="background-color: rgb(71, 179, 118);">
+     {% block nav %}
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link n-link" href="{{ url_for('main.myVehicles') }}">Vehicle Registration</a>
@@ -38,9 +39,8 @@
                 <a class="nav-link n-link" href="#">Assistant</a>
             </li>  
         </ul>
+        {% endblock %}
     </nav>
-    <br>
-    <br>
     {% block content %}
       
     {% endblock %}
